@@ -13,10 +13,8 @@
 
 #if defined(__APPLE__)
 #include <util.h>
-#elif defined(__GLIBC__)
+#else
 #include <pty.h>
-#else /* bsd without glibc */
-#include <libutil.h>
 #endif
 
 #include <HsFFI.h>

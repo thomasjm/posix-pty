@@ -29,10 +29,10 @@ Library
   Default-Language:     Haskell2010
   GHC-Options:          -Wall
   Exposed-Modules:      System.Posix.Pty
-  Other-Modules:        
+  Other-Modules:
 
   C-Sources:            cbits/fork_exec_with_pty.c cbits/pty_size.c
-  CC-Options:           -Wall -std=c99
+  CC-Options:           -std=c99
   Include-Dirs:         cbits
   Includes:             fork_exec_with_pty.h pty_size.h
 
