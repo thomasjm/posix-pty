@@ -32,7 +32,7 @@ Library
   Other-Modules:        
 
   C-Sources:            cbits/fork_exec_with_pty.c cbits/pty_size.c
-  CC-Options:           -Wall -Wextra -std=c99
+  CC-Options:           -Wall -std=c99
   Include-Dirs:         cbits
   Includes:             fork_exec_with_pty.h pty_size.h
 
@@ -41,7 +41,7 @@ Library
                ,        process >= 1.6.6.0
                ,        unix >= 2.6
 
-  if os(linux) || os(freebsd)
+  if os(freebsd)
     Extra-Libraries: util
 
 Test-Suite stty
